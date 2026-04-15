@@ -3,6 +3,7 @@ import "./Navbar.css"
 
 function Navbar() {
     const [active, setActive] = useState("hero")
+    const [menuOpen, setMenuOpen] = useState(false)
 
     useEffect(() => {
   const handleScroll = () => {
@@ -34,11 +35,15 @@ function Navbar() {
         <nav className="navbar">
             <h2 className="logo">Nico</h2>
 
-            <ul className="nav-links">
-                <li><a href="#hero" className={active === "hero" ? "active" : ""}>Home</a></li>
-                <li><a href="#about" className={active === "about" ? "active" : ""}>About</a></li>
-                <li><a href="#projects" className={active === "projects" ? "active" : ""}>Projects</a></li>
-                <li><a href="#contact" className={active === "contact" ? "active" : ""}>Contact</a></li>
+            <div className="menu-icon" onClick={() => 
+              setMenuOpen(!menuOpen)}> ☰
+            </div>
+
+            <ul className={`nav-links ${menuOpen ? "open" : ""}`}>
+                <li><a href="#hero" className={active === "hero" ? "active" : ""} onClick={() => setMenuOpen(false)}>Home</a></li>
+                <li><a href="#about" className={active === "about" ? "active" : ""} onClick={() => setMenuOpen(false)}>About</a></li>
+                <li><a href="#projects" className={active === "projects" ? "active" : ""} onClick={() => setMenuOpen(false)}>Projects</a></li>
+                <li><a href="#contact" className={active === "contact" ? "active" : ""} onClick={() => setMenuOpen(false)}>Contact</a></li>
             </ul>
         </nav>
     )
