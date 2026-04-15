@@ -6,7 +6,7 @@ function Navbar() {
 
     useEffect(() => {
   const handleScroll = () => {
-    const sections = ["hero", "projects", "contact"]
+    const sections = ["hero","about", "projects", "contact"]
 
     let current = "hero"
 
@@ -36,6 +36,7 @@ function Navbar() {
 
             <ul className="nav-links">
                 <li><a href="#hero" className={active === "hero" ? "active" : ""}>Home</a></li>
+                <li><a href="#about" className={active === "about" ? "active" : ""}>About</a></li>
                 <li><a href="#projects" className={active === "projects" ? "active" : ""}>Projects</a></li>
                 <li><a href="#contact" className={active === "contact" ? "active" : ""}>Contact</a></li>
             </ul>

@@ -27,6 +27,7 @@
     color: white;
     border-radius: 6px;
     text-decoration: none;
+    transition: 0.3s;
 }
 
 .project-buttons a:hover {

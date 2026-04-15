@@ -39,6 +39,7 @@
   border-radius: 8px;
   text-decoration: none;
   color: white;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
@@ -53,6 +54,7 @@
   border-radius: 8px;
   text-decoration: none;
   color: white;
+  transition: 0.3s;
 }
 
 .btn-secondary:hover {
