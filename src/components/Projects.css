@@ -1,0 +1,25 @@
+.projects {
+    scroll-margin-top: 60px;
+    padding: 60px;
+    background: #020617;
+    color: white;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 100 0.6s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
