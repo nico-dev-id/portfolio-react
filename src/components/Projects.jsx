@@ -33,7 +33,9 @@ function Projects () {
             <div className="projects-container">
                 <ProjectCard 
                  title="Weather App" 
-                 desc="React weather app with real-time API and forecast."
+                 desc="A weather application built with React that fetches real-time data 
+                 from an external API. It allows users to search by city name, view current weather conditions, 
+                 and see a multi-day forecast with a responsive and dynamic UI."
                  live="https://weather-react-app-three-teal.vercel.app/"
                  github="https://github.com/nico-dev-id/weather-react-app"
                 image={weatherImg}
@@ -41,17 +43,21 @@ function Projects () {
 
                 <ProjectCard 
                  title="Portfolio Website" 
-                 desc="Personal portfolio built with React."
-                 live="#"
-                 github="#"
+                 desc="A personal portfolio website built with React to showcase projects and frontend skills. 
+                 Features include smooth scrolling navigation, interactive UI elements, and a responsive design 
+                 optimized for both desktop and mobile devices."
+                 live="https://portfolio-react-ten-virid.vercel.app/"
+                 github="https://github.com/nico-dev-id/portfolio-react"
                  image={portfolioImg}
                 />
 
                 <ProjectCard 
                  title="Task Manager App" 
-                 desc="A responsive task management application with drag-and-drop functionality, filtering system, and persistent data using LocalStorage."
-                 live="#"
-                 github="#"
+                 desc="A task management application built with JavaScript that allows users to create, organize, 
+                 and manage tasks efficiently. It includes drag-and-drop functionality, filtering options, 
+                 and persistent data storage using LocalStorage."
+                 live="https://nico-dev-id.github.io/task-manager-app/"
+                 github="https://github.com/nico-dev-id/task-manager-app"
                  image={todoImg}
                 />
             </div>

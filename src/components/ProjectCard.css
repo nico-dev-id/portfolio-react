@@ -31,6 +31,7 @@
 
 .project-buttons a:hover {
     background: #0ea5e9;
+    transform: scale(1.05);
 }
 
 .project-img {
