@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 import "./Projects.css"
 import weatherImg from "../assets/weather.jpeg"
-import portfolioImg from "../assets/portfolio.jpeg"
+import jobtrackerImg from "../assets/jobtracker.jpeg"
 import todoImg from "../assets/todo.jpeg"
 
 function Projects () {
@@ -42,13 +42,12 @@ function Projects () {
                 />
 
                 <ProjectCard 
-                 title="Portfolio Website" 
-                 desc="A personal portfolio website built with React to showcase projects and frontend skills. 
-                 Features include smooth scrolling navigation, interactive UI elements, and a responsive design 
-                 optimized for both desktop and mobile devices."
-                 live="https://portfolio-react-ten-virid.vercel.app/"
-                 github="https://github.com/nico-dev-id/portfolio-react"
-                 image={portfolioImg}
+                 title="Job Tracker App" 
+                 desc="A responsive job tracking application built with React, featuring full CRUD functionality, 
+                 status tracking, and clean UI design with LocalStorage-based data persistence."
+                 live="https://job-tracker-react-ten.vercel.app/"
+                 github="https://github.com/nico-dev-id/job-tracker-react"
+                 image={jobtrackerImg}
                 />
 
                 <ProjectCard 
